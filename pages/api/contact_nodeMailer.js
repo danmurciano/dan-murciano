@@ -1,0 +1,50 @@
+"use strict";
+const nodemailer = require("nodemailer");
+
+export default async (req, res) => {
+  const form = req.body;
+  const emailTo = process.env.CONTACT_EMAIL;
+
+  // async..await is not allowed in global scope, must use a wrapper
+  async function main() {
+    // Generate test SMTP service account from ethereal.email
+    // Only needed if you don't have a real mail account for testing
+    let testAccount = await nodemailer.createTestAccount();
+
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+      host: "aspmx.l.google.com",
+      port: 25,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: emailTo, // generated ethereal user
+        pass: process.env.PASSWORD, // generated ethereal password
+      },
+    });
+
+    // send mail with defined transport object
+    let info = await transporter.sendMail({
+      from: form.email, // sender address
+      to: process.env.CONTACT_EMAIL, // list of receivers
+      subject: 'Website Message', // Subject line
+      text: form.message + " ", // plain text body
+      html: 'Embedded image: <img src="josePainting"/>',
+      attachments: [{
+        filename: 'photo.jpg',
+        path: `/Users/danmurciano/Web-Dev/Projects/Jose/public/${form.photo}`,
+        cid: "josePainting"
+      }]
+    });
+
+    console.log("Message sent: %s", info.messageId);
+    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+    // Preview only available when sending through an Ethereal account
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+  }
+
+  main().catch(console.error);
+
+  res.status(200).json(emailTo);
+}
