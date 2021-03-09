@@ -131,6 +131,7 @@
   max-height: calc(20vw - 8px);
 }
 
+
 .icon {
   margin: 5%;
   width: 10%;
@@ -151,6 +152,23 @@
   font-size: calc(18.16px + 0.2vw);
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
   font-weight: 200;
+}
+
+.col-icon-left {
+  -webkit-flex: 0 0 24%;
+  flex: 0 0 24%;
+  max-width: 120px;
+}
+
+.col-icon {
+  -webkit-flex: 0 0 12%;
+  flex: 0 0 12%;
+  max-width: 60px;
+  padding: 0 !important;
+}
+
+.icon {
+  margin: auto !important;
 }
 
 
@@ -235,11 +253,6 @@
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
 }
-
-/* .carousel-image-row {
-  max-width: 100vw !important;
-  margin: 0 auto !important;
-} */
 
 
 .carousel-image {

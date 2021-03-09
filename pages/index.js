@@ -49,16 +49,16 @@ export default function Home() {
 
               <div class="project">
                 <div class="row project-header">
-                  <div class="col-2"/>
-                  <div class="col-8">
+                  <div class="col col-icon-left"/>
+                  <div class="col">
                     <h3> Home Design </h3>
                   </div>
-                  <div class="col-1">
+                  <div class="col col-icon">
                     <a href="http://home-design.danmurciano.vercel.app" target="_blank" rel="noopener noreferrer">
                       <Icon name="computer" size="large" link/>
                     </a>
                   </div>
-                  <div class="col-1">
+                  <div class="col col-icon">
                     <a href="https://github.com/danmurciano/home-design" target="_blank" rel="noopener noreferrer">
                       <Icon name="github" size="large" link/>
                     </a>
@@ -80,16 +80,16 @@ export default function Home() {
 
               <div class="project">
                 <div class="row project-header">
-                  <div class="col-2"/>
-                  <div class="col-8">
+                  <div class="col col-icon-left"/>
+                  <div class="col">
                     <h3> Paintings Gallery </h3>
                   </div>
-                  <div class="col-1">
+                  <div class="col col-icon">
                     <a href="https://jose-murciano.vercel.app" target="_blank" rel="noopener noreferrer">
                       <Icon name="computer" size="large" link/>
                     </a>
                   </div>
-                  <div class="col-1">
+                  <div class="col col-icon">
                     <a href="https://github.com/danmurciano/jose-murciano/tree/master" target="_blank" rel="noopener noreferrer">
                       <Icon name="github" size="large" link/>
                     </a>
