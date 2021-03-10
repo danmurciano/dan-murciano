@@ -29,18 +29,18 @@ export default function Home() {
             <div class="sub-section">
               <h2> Skills </h2>
               <div class="row icon-row">
-                <Image className="icon" src="images/logo_html.jpg" />
-                <Image className="icon" src="images/logo_css2.jpg" />
-                <Image className="icon" src="images/logo_js.jpg" />
-                <Image className="icon" src="images/logo_react2.jpg" />
-                <Image className="icon" src="images/logo_next.jpg" />
+                <Image className="skills-icon" src="images/logo_html.jpg" />
+                <Image className="skills-icon" src="images/logo_css.jpg" />
+                <Image className="skills-icon" src="images/logo_js.jpg" />
+                <Image className="skills-icon" src="images/logo_react.jpg" />
+                <Image className="skills-icon" src="images/logo_next.jpg" />
               </div>
               <div class="row icon-row">
-                <Image className="icon" src="images/logo_node.jpg" />
-                <Image className="icon" src="images/logo_mongodb.jpg" />
-                <Image className="icon" src="images/logo_postgresql.jpg" />
-                <Image className="icon" src="images/logo_python2.jpg" />
-                <Image className="icon" src="images/logo_ps.jpg" />
+                <Image className="skills-icon" src="images/logo_node.jpg" />
+                <Image className="skills-icon" src="images/logo_mongodb.jpg" />
+                <Image className="skills-icon" src="images/logo_postgresql.jpg" />
+                <Image className="skills-icon" src="images/logo_python.jpg" />
+                <Image className="skills-icon" src="images/logo_ps.jpg" />
               </div>
             </div>
 

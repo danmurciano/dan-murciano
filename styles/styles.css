@@ -92,7 +92,7 @@
 
 .section {
   margin: 0 auto 100px;
-  padding-top: 100px;
+  padding-top: 90px;
 }
 
 .sub-section {
@@ -100,10 +100,14 @@
   padding-top: 30px;
 }
 
+h2 {
+  font-size: calc(26.32px + 0.4vw);
+}
+
 
 .aboutText-div {
   max-width: 560px;
-  padding: 60px 0 0;
+  padding: 90px 0 0;
   margin: auto;
 }
 
@@ -132,7 +136,7 @@
 }
 
 
-.icon {
+.skills-icon {
   margin: 5%;
   width: 10%;
   height: auto;
