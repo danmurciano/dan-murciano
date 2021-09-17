@@ -64,9 +64,9 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <div class="project-image">
+                <div class="project-image-div">
                   <a href="http://home-design.danmurciano.vercel.app" target="_blank" rel="noopener noreferrer">
-                    <Image src="images/hd1.jpg" />
+                    <Image className="project-image" src="images/hd1.jpg"/>
                   </a>
                 </div>
                 <p class="project-text"> A React/ Next.js based mock web store app.
@@ -95,9 +95,9 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <div class="project-image">
+                <div class="project-image-div">
                   <a href="https://jose-murciano.vercel.app" target="_blank" rel="noopener noreferrer">
-                    <Image src="images/gallery.jpg" />
+                    <Image className="project-image" src="images/gallery.jpg" />
                   </a>
                 </div>
                 <p class="project-text"> A simple React based personal website of a painter.

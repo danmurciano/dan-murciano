@@ -176,9 +176,13 @@ h2 {
 }
 
 
-.project-image {
+.project-image-div {
   margin-bottom: 30px;
   box-shadow: 0 0 20px #b0b0b0;
+}
+
+.project-image {
+  max-width: 100%;
 }
 
 .project-image:hover {
