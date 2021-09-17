@@ -1,5 +1,5 @@
 import React from "react";
-import { Label, Button, Modal, Image, Icon } from 'semantic-ui-react';
+import { Image, Icon } from 'semantic-ui-react';
 import Header from "../components/_App/Header";
 
 
