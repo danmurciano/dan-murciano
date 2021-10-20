@@ -82,6 +82,37 @@ export default function Home() {
                 <div class="row project-header">
                   <div class="col col-icon-left"/>
                   <div class="col">
+                    <h3> Weather Point </h3>
+                  </div>
+                  <div class="col col-icon">
+                    <a href="https://weather-point.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <Icon name="computer" size="large" link/>
+                    </a>
+                  </div>
+                  <div class="col col-icon">
+                    <a href="https://github.com/danmurciano/WeatherPoint" target="_blank" rel="noopener noreferrer">
+                      <Icon name="github" size="large" link/>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-image-div">
+                  <a href="https://weather-point.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <Image className="project-image" src="images/wp1.jpg"/>
+                  </a>
+                </div>
+                <p class="project-text"> A React / Next.js based wather web app.
+                  It shows current, hourly and daily weather of a user selected location. 
+                  <a class="read-more" href="/weather-point">
+                    Read more
+                    <Icon className="arrow-icon" name="arrow alternate circle right" />
+                  </a>
+                </p>
+              </div>
+
+              <div class="project">
+                <div class="row project-header">
+                  <div class="col col-icon-left"/>
+                  <div class="col">
                     <h3> Paintings Gallery </h3>
                   </div>
                   <div class="col col-icon">
