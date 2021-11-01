@@ -85,20 +85,31 @@
 
 .home-main {
   text-align: center;
-  max-width: 760px;
+  /* max-width: 760px; */
   margin: auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+}
+
+.section-about {
+  background-color: #545454;
+  margin: 0 auto 100px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .section {
   margin: 0 auto 100px;
   padding-top: 90px;
+  max-width: 640px;
 }
 
 .sub-section {
   margin: 0 auto 100px;
   padding-top: 30px;
+  background-color: white;
 }
+
+
 
 h2 {
   font-size: calc(26.32px + 0.4vw);
