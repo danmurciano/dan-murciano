@@ -19,11 +19,12 @@ export default function Home() {
             <div class="aboutText-div" id="about">
               <h2> About </h2>
               <p class="aboutText"> I’m a self-taught web developer with a background in video and audio editing.
-              I enjoy discerning and analyzing problems, and coming up with solutions for them.
-              I'm also interested in the visual side, and I'm always aiming at creating designs that are unique and combine both aesthetics and functionality. </p>
+              Whether it's building a UI component, or carefully planning a database with particular sets of data and attributes,
+              I enjoy analyzing a problem and breaking it down to its core components, employing a somewhat scientific approach to the process.
+              I'm also interested in the visual side, and I tend to prefer designs that are clean and elegant, with a good balance of aesthetics and functionality. </p>
             </div>
             <div class="image-dan">
-              <Image className="image-dan" circular src="images/dan_image4.jpg" />
+              <Image className="image-dan" circular src="images/dan_image.jpg" />
             </div>
           </div>
 

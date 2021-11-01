@@ -1,9 +1,8 @@
 /* Googole Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
 
 
@@ -26,6 +25,7 @@
   margin: 0 !important;
   padding: 0 !important;
   background-color: white;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .nav-center {
@@ -70,7 +70,6 @@
   text-align: center !important;
   background-image: url("/images/banner_back.jpg");
   background-size: cover;
-  /* height: 480px; */
   background-position: 50% 50%;
 }
 
@@ -80,51 +79,47 @@
   max-width: 350px;
   margin: auto !important;
   vertical-align: middle !important;
-  padding: calc(119px + 3vw) 0;
+  padding: calc(120px + 6vw) 0;
 }
 
 .home-main {
   text-align: center;
-  /* max-width: 760px; */
   margin: auto;
-  /* padding: 0 20px; */
 }
 
-.section-about {
-  background-color: #545454;
-  margin: 0 auto 100px;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
 
 .section {
   margin: 0 auto 100px;
-  padding-top: 90px;
-  max-width: 640px;
+  padding: calc(32px + 3vw) 10px 0 10px;
+  max-width: 660px;
 }
 
 .sub-section {
   margin: 0 auto 100px;
-  padding-top: 30px;
+  padding: 30px 10px 0 10px;
   background-color: white;
+  max-width: 660px;
 }
 
 
 
 h2 {
-  font-size: calc(26.32px + 0.4vw);
+  font-size: calc(28.48px + 0.6vw);
+  font-family: 'Playfair Display', sans-serif;
+  color: #97e8e3;
+  margin: 0 auto 20px auto;
 }
 
 
 .aboutText-div {
-  max-width: 560px;
+  max-width: 520px;
   padding: 90px 0 0;
   margin: auto;
 }
 
 
 .aboutText {
-  color: #757575;
+  color: #383838;
   font-size: 16px;
   font-size: calc(12.16px + 0.2vw);
   font-family: 'Open Sans', sans-serif;
@@ -163,9 +158,9 @@ h2 {
 }
 
 .project h3 {
-  font-size: 22px;
-  font-size: calc(18.16px + 0.2vw);
-  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-size: calc(20.16px + 0.2vw);
+  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
 }
 
@@ -180,6 +175,7 @@ h2 {
   flex: 0 0 12%;
   max-width: 60px;
   padding: 0 !important;
+  margin: auto !important;
 }
 
 .icon {
@@ -205,7 +201,7 @@ h2 {
   padding: 0 3.2vw;
   font-size: 16px;
   font-size: calc(12.16px + 0.2vw);
-  color: #757575;
+  color: #383838;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   line-height: 1.8rem;
@@ -240,7 +236,7 @@ h2 {
   margin: 150px auto;
   padding: 20px !important;
   background-color: #120c01;
-  color: #9c907c;
+  color: #97e8e3;
   font-family: "raleway";
   text-align: center;
   font-size: 15px;
@@ -248,7 +244,7 @@ h2 {
 }
 
 
-/* Home Design */
+/* Project Page */
 
 .breadcrumb-div {
   padding: 6px 0;
