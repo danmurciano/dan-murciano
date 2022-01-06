@@ -8,27 +8,27 @@ export default function Header() {
 
   return (
     <>
-      <Navbar sticky="top" variant="light" className="navbar-center">
+      <Navbar sticky="top" variant="dark" className="navbar-center">
         <Nav className="nav-center">
 
           <Nav.Link
             className={router.pathname === "/" ? "nav-item navTextActive" : "nav-item navText"}
-            href="#home">Home
+            href="/#home">Home
           </Nav.Link>
 
           <Nav.Link
             className={router.pathname === "/about" ? "nav-item navTextActive" : "nav-item navText"}
-            href="#about">About
+            href="/#about">About
           </Nav.Link>
 
           <Nav.Link
             className={router.pathname === "/projects" ? "nav-item navTextActive" : "nav-item navText"}
-            href="#projects">Projects
+            href="/#projects">Projects
           </Nav.Link>
 
           <Nav.Link
             className={router.pathname === "/contact" ? "nav-item navTextActive" : "nav-item navText"}
-            href="#contact">Contact
+            href="/#contact">Contact
           </Nav.Link>
 
         </Nav>

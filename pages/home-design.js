@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from 'react-bootstrap';
 import { Image, Icon, Button, Menu, Breadcrumb } from 'semantic-ui-react';
 
+
 export default function HomeDesign() {
   const [image, setImage] = React.useState(0);
 
@@ -21,7 +22,7 @@ export default function HomeDesign() {
     }
   }
 
-  const homeDesignImages = ["hd1", "hd2", "hd3", "hd4", "hd5", "hd6", "hd7", "hd8"];
+  const homeDesignImages = ["hd1", "hd2", "hd3", "hd4", "hd5", "hd6", "hd7"];
 
   function populateCarousel(images) {
     return images.map(i => (
@@ -43,11 +44,11 @@ export default function HomeDesign() {
 
   return (
     <div class="pageHome">
-      <div class="breadcrumb-div">
-        <Breadcrumb className="breadcrumb" size="small" icon='right angle' sections={sections} />
-      </div>
-
       <div class="home-design">
+        <div class="breadcrumb-div">
+          <Breadcrumb className="breadcrumb" size="small" icon='right angle' sections={sections} />
+        </div>
+
         <div class="carousel">
           <div class="row carousel-image-row">
             <div class="col-2 arrow-col">
@@ -73,7 +74,8 @@ export default function HomeDesign() {
         </div>
 
 
-        <div class="home-design project-page-text">
+        <div class="project-page-text">
+          <h4> Description </h4>
           <p> Home Design is a React/ Nextjs based mock web store app. Below is a detailed description of the functionality and underlying logic. </p>
 
           <br/>
@@ -137,7 +139,7 @@ export default function HomeDesign() {
       </div>
 
       <div class="footer">
-        <p> {`© All Rights Reserved Dan Murciano 2021`} </p>
+        <p> {`© All Rights Reserved Dan Murciano 2022`} </p>
       </div>
     </div>
   );

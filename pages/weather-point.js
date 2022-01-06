@@ -43,11 +43,11 @@ export default function WeatherPoint() {
 
   return (
     <div class="pageHome">
-      <div class="breadcrumb-div">
-        <Breadcrumb className="breadcrumb" size="small" icon='right angle' sections={sections} />
-      </div>
-
       <div class="home-design">
+        <div class="breadcrumb-div">
+          <Breadcrumb className="breadcrumb" size="small" icon='right angle' sections={sections} />
+        </div>
+
         <div class="carousel">
           <div class="row carousel-image-row">
             <div class="col-2 arrow-col">
@@ -73,7 +73,7 @@ export default function WeatherPoint() {
         </div>
 
 
-        <div class="home-design project-page-text">
+        <div class="project-page-text">
 
           <h4> Description </h4>
           <p> Weather Point is a React / Next.js based weather web app. It shows current, hourly and daily weather of a location.
@@ -107,7 +107,7 @@ export default function WeatherPoint() {
       </div>
 
       <div class="footer">
-        <p> {`© All Rights Reserved Dan Murciano 2021`} </p>
+        <p> {`© All Rights Reserved Dan Murciano 2022`} </p>
       </div>
     </div>
   );

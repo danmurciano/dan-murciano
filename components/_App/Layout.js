@@ -12,6 +12,7 @@ function Layout({ children }) {
       </Head>
 
       <div class="wrapper">
+        <Header/>
         <Container fluid class="page">
           {children}
         </Container>
