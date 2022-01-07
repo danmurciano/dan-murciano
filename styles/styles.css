@@ -91,7 +91,8 @@ h2 {
 .about {
   margin: 70px auto;
   padding: 0 15px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+  padding-bottom: calc(50px + 1.5vw);
   max-width: 800px;
   background-color: white;
   box-shadow: 0 0 20px #b0b0b0;
@@ -99,7 +100,8 @@ h2 {
 
 .aboutText-div {
   max-width: 600px;
-  padding-top: 100px;
+  padding-top: 96px;
+  padding-top: calc(55px + 2vw);
   margin: auto;
 }
 
@@ -117,6 +119,7 @@ h2 {
 
 .image-dan {
   margin: 70px auto 120px;
+  margin: calc(40px + 1.5vw) auto calc(90px + 1.5vw);
   height: 110px;
 }
 
@@ -125,7 +128,6 @@ h2 {
   max-width: 600px;
   max-height: calc(20vw - 8px);
 }
-
 
 .skills-icon {
   margin: 5%;
@@ -192,7 +194,7 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   line-height: 1.7rem;
-  height: 6rem;
+  height: 5.6rem;
 }
 
 .col-icon-left {
