@@ -59,7 +59,7 @@
   text-align: center !important;
   background-image: url("/images/banner_back.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 10% 50%;
 }
 
 .home-image-front {
@@ -81,7 +81,7 @@ h2 {
   font-size: 24px;
   font-family: 'Playfair Display', sans-serif;
   color: #60b5bd;
-  margin: 0 auto 30px;
+  margin: 0 auto 26px;
 }
 
 
@@ -138,16 +138,17 @@ h2 {
 
 .projects {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 3vw auto;
   padding-top: 100px;
 }
 
 .project-col {
-  padding: 0 30px;
+  padding: 0 2.75%;
 }
 
 .project {
-  margin: 50px auto 100px;
+  margin: 30px auto 90px;
+  margin: 1.5vw auto calc(50px + 2vw);
   box-shadow: 0 0 20px #b0b0b0;
   max-width: 400px;
 }
@@ -191,7 +192,7 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   line-height: 1.7rem;
-  height: 5.4rem;
+  height: 6rem;
 }
 
 .col-icon-left {
@@ -239,6 +240,7 @@ h2 {
 
 .footer {
   padding: 100px 0 80px;
+  padding: calc(59px + 2vw) 0 calc(39px + 2vw);
   background-color: #120c01;
   color: #60b5bd;
   font-family: "raleway";
@@ -259,6 +261,7 @@ h2 {
 
 .footer-copyright {
   margin-top: 80px;
+  margin-top: calc(39px + 2vw);
 }
 
 
@@ -267,7 +270,7 @@ h2 {
 
 .home-design {
   max-width: 1140px;
-  margin: 30px auto 100px;
+  margin: 40px auto;
   padding: 0 15px 80px;
   background-color: white;
   box-shadow: 0 0 20px #b0b0b0;
