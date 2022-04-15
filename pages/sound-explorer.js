@@ -78,12 +78,12 @@ export default function HomeDesign() {
 
           <br/>
           <h4> Authentication </h4>
-          <p>
-          On the basic mode, the app is authenticated to the Spotify API with client credentials. That allows the app to interact with Spotify. When a user clicks the “Connect Spotify” button a Spotify user authentication is triggered. If the user has been successfully authenticated, a token will be provided by Spotify, and will be stored in the app’s session. The app will also try to look for the user in its database (PostgreSQL is used). If found, the user will be stored in the app’s session. Otherwise, a new user with the data retrieved from Spotify will be created and committed to the database.
-          An authenticated admin also has access to the admin pages (cart is removed from the navbar, as it is irrelevant).
-          When an admin successfully logs in, he receives both a regular user token and an admin token.
-          The admin token is required by admin api’s, that uses it to authenticate the request as one made by an admin, and send the appropriate data.
-          </p>
+          <p> On the basic mode, the app is authenticated to the Spotify API with client credentials. That allows the app to interact with Spotify.
+          When a user clicks the “Connect Spotify” button a Spotify user authentication is triggered.
+          If the user has been successfully authenticated, a token will be provided by Spotify, and will be stored in the app’s session.
+          The app will also try to look for the user in its database (PostgreSQL is used). If found, the user will be stored in the app’s session.
+          Otherwise, a new user with the data retrieved from Spotify will be created and committed to the database. </p>
+
 
         </div>
       </div>
