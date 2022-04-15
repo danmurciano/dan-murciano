@@ -21,7 +21,7 @@ export default function WeatherPoint() {
     }
   }
 
-  const weatherPointImages = ["wp1", "wp2", "wp3"];
+  const weatherPointImages = ["wp7", "wp6", "wp5"];
 
   function populateCarousel(images) {
     return images.map(i => (
@@ -69,6 +69,13 @@ export default function WeatherPoint() {
 
           <div class="image-index">
             <Menu borderless activeIndex={image}> {populateCarousel(weatherPointImages)} </Menu>
+          </div>
+
+          <div class="open-app-btn">
+            <a href="https://weather-point.vercel.app" target="_blank" rel="noopener noreferrer">
+              Open App
+              <Icon className="arrow-icon" name="arrow alternate circle right"/>
+            </a>
           </div>
         </div>
 

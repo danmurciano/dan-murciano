@@ -63,9 +63,9 @@
 }
 
 .home-image-front {
-  content: url("/images/banner_front.jpg");
+  content: url("/images/banner_front2.png");
   width: 85vw;
-  max-width: 370px;
+  max-width: 400px;
   margin: auto !important;
   vertical-align: middle !important;
   padding: calc(124px + 6vw) 0;
@@ -99,22 +99,22 @@ h2 {
 }
 
 .aboutText-div {
-  max-width: 600px;
+  max-width: 580px;
   padding-top: 96px;
   padding-top: calc(55px + 2vw);
   margin: auto;
 }
 
 .aboutText {
-  color: black;
-  font-size: 16px;
-  font-size: calc(14px + 0.1vw);
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 200;
-  line-height: 2.4rem;
-  line-height: calc(2.2rem + 0.16vw);
   text-align: center;
-  margin: 0 auto;
+  color: black;
+  font-size: 17px;
+  font-size: calc(15px + 0.1vw);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 2.2rem;
+  line-height: calc(2.0rem + 0.16vw);
+  margin: 16px auto;
 }
 
 .image-dan {
@@ -139,13 +139,13 @@ h2 {
 /* Projects */
 
 .projects {
-  max-width: 1200px;
+  max-width: 1480px;
   margin: 3vw auto;
   padding-top: 100px;
 }
 
 .project-col {
-  padding: 0 2.75%;
+  padding: 0 1.75%;
 }
 
 .project {
@@ -168,7 +168,7 @@ h2 {
 }
 
 .project-image {
-  height: 380px;
+  height: 370px;
   width: 100%;
   object-fit: cover;
   object-position: 50% 0;
@@ -177,8 +177,8 @@ h2 {
 }
 
 .project-image:hover {
-  opacity: 0.85;
-  transform: scale(1.1);
+  opacity: 0.9;
+  transform: scale(1.08);
 }
 
 .project-body {
@@ -347,7 +347,7 @@ h2 {
 }
 
 .menu-button-active {
-  color: #4693cf !important;
+  color: #4998de !important;
   width: 12.5%;
 }
 
@@ -359,6 +359,13 @@ h2 {
 
 .ui.menu .item>i.icon {
   margin: auto !important;
+}
+
+.open-app-btn {
+  font-size: 16px;
+  color: #4998de;
+  margin: 40px auto 0;
+  text-align: center;
 }
 
 .project-page-text {

@@ -17,10 +17,14 @@ export default function Home() {
           <div class="about">
             <div class="aboutText-div" id="about">
               <h2> - About - </h2>
-              <p class="aboutText"> I’m a self-taught web developer with a background in video and audio editing.
-              Whether it's building a UI component, or carefully planning a database with particular sets of data and attributes,
-              I enjoy analyzing a problem and breaking it down to its core components, employing a somewhat scientific approach to the process.
-              I'm also interested in the visual side, and I tend to prefer designs that are clean and elegant, with a good balance of aesthetics and functionality. </p>
+              <p class="aboutText"> A software developer who designs apps that employ both aesthetics and functionality.
+              Constantly exploring, and finding new ways for integrating technology and art.
+              Whether it's building a UI component, or carefully planning a database with particular sets of data and properties,
+              I approach problems with an analytical, somewhat scientific mindset, breaking them down to their core components,
+              and coming up with solutions. </p>
+              <p class="aboutText"> Before becoming a developer I worked as a video & audio editor, where I often found myself meticulously
+              assembling and modifying little pieces in order to create a cohesive whole. As a developer, I find that I use a rather similar
+              process, although in a different context. </p>
             </div>
             <div class="image-dan">
               <Image className="image-dan" circular src="images/dan_image.jpg" />
@@ -49,7 +53,7 @@ export default function Home() {
 
             <div class="row">
 
-              <div class="project-col col-xl-4 col-lg-6 col-md-12">
+              <div class="project-col col-xl-3 col-lg-6 col-md-12">
                 <div class="project">
                   <div class="project-image-div">
                     <a href="http://home-design.danmurciano.vercel.app" target="_blank" rel="noopener noreferrer">
@@ -78,11 +82,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="project-col col-xl-4 col-lg-6 col-md-12">
+              <div class="project-col col-xl-3 col-lg-6 col-md-12">
                 <div class="project">
                   <div class="project-image-div">
-                    <a href="https://weather-point.vercel.app/" target="_blank" rel="noopener noreferrer">
-                      <Image className="project-image" src="images/wp_main.jpg"/>
+                    <a href="https://weather-point.vercel.app" target="_blank" rel="noopener noreferrer">
+                      <Image className="project-image" src="images/wp_main2.jpg"/>
                     </a>
                   </div>
                   <div class="project-body">
@@ -107,7 +111,36 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="project-col col-xl-4 col-lg-6 col-md-12">
+              <div class="project-col col-xl-3 col-lg-6 col-md-12">
+                <div class="project">
+                  <div class="project-image-div">
+                    <a href="https://sound-explorer.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                      <Image className="project-image" src="images/se_main.jpg"/>
+                    </a>
+                  </div>
+                  <div class="project-body">
+                    <h3> Sound Explorer </h3>
+                    <p class="project-text"> a Flask based web app powered by the Spotify Api that
+                       allows users to get music recommendations based off a reference track.
+                    </p>
+                    <p>
+                      <a href="https://sound-explorer.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                        <Icon name="computer" size="large" link/>
+                      </a>
+
+                      <a href="https://github.com/danmurciano/sound-explorer" target="_blank" rel="noopener noreferrer">
+                        <Icon name="github" size="large" link/>
+                      </a>
+                      <a class="read-more" href="/sound-explorer">
+                        Read more
+                        <Icon className="arrow-icon" name="arrow alternate circle right" />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-col col-xl-3 col-lg-6 col-md-12">
                 <div class="project">
                   <div class="project-image-div">
                     <a href="https://jose-murciano.vercel.app" target="_blank" rel="noopener noreferrer">

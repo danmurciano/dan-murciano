@@ -71,6 +71,13 @@ export default function HomeDesign() {
           <div class="image-index">
             <Menu borderless activeIndex={image}> {populateCarousel(homeDesignImages)} </Menu>
           </div>
+
+          <div class="open-app-btn">
+            <a href="http://home-design.danmurciano.vercel.app" target="_blank" rel="noopener noreferrer">
+              Open App
+              <Icon className="arrow-icon" name="arrow alternate circle right"/>
+            </a>
+          </div>
         </div>
 
 
