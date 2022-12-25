@@ -26,7 +26,7 @@ export default function HomeDesign() {
             </div>
           </div>
           <div class="open-app-btn">
-            <a href="https://sound-explorer.herokuapp.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://sound-explorer.onrender.com" target="_blank" rel="noopener noreferrer">
               Open App
               <Icon className="arrow-icon" name="arrow alternate circle right"/>
             </a>

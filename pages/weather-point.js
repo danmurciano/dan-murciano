@@ -109,7 +109,7 @@ export default function WeatherPoint() {
           <p> As a side note, opening multiple tabs of the app with multiple locations could potentially mess up the process
           of saving a location, as there’s only one “currentLocation” cookie, and its value always updates to the
           most recently loaded location, meaning that an open tab of a previously loaded location will not save the location correctly,
-          once another tab has been loaded on a different tab. </p>
+          once another location has been loaded on a different tab. </p>
         </div>
       </div>
 

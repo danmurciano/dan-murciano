@@ -114,7 +114,7 @@ export default function Home() {
               <div class="project-col col-xl-3 col-lg-6 col-md-12">
                 <div class="project">
                   <div class="project-image-div">
-                    <a href="https://sound-explorer.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://sound-explorer.onrender.com" target="_blank" rel="noopener noreferrer">
                       <Image className="project-image" src="images/se_main.jpg"/>
                     </a>
                   </div>
@@ -124,7 +124,7 @@ export default function Home() {
                        allows users to get music recommendations based off a reference track.
                     </p>
                     <p>
-                      <a href="https://sound-explorer.herokuapp.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://sound-explorer.onrender.com" target="_blank" rel="noopener noreferrer">
                         <Icon name="computer" size="large" link/>
                       </a>
 

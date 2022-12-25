@@ -25,7 +25,7 @@
   text-align: center !important;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: white;
+  /* background-color: white; */
   background-color: #120c01;
 }
 
@@ -68,7 +68,7 @@
   max-width: 400px;
   margin: auto !important;
   vertical-align: middle !important;
-  padding: calc(120px + 5vw) 0;
+  padding: calc(140px + 5vw) 0;
 }
 
 .home-main {
@@ -142,6 +142,7 @@ h2 {
   max-width: 1480px;
   margin: 3vw auto;
   padding-top: 100px;
+  background-color: black;
 }
 
 .project-col {
@@ -177,7 +178,7 @@ h2 {
 }
 
 .project-image:hover {
-  opacity: 0.9;
+  /* opacity: 0.9; */
   transform: scale(1.08);
 }
 
@@ -229,7 +230,7 @@ h2 {
 
 .projects a {
   color: white !important;
-  opacity: 0.7;
+  /* opacity: 0.9; */
 }
 
 .projects a:hover {

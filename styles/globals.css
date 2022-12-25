@@ -6,6 +6,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
   background-color: #ededed;
+  background-image: url("/images/background8.jpg");
+  /* background-size: 200%; */
+  /* background-position: 99% 10%; */
 }
 
 a {
