@@ -120,7 +120,7 @@ h2 {
 .image-dan {
   margin: 70px auto 120px;
   margin: calc(40px + 1.5vw) auto calc(90px + 1.5vw);
-  height: 110px;
+  height: 180px;
 }
 
 .icon-row {
