@@ -20,10 +20,8 @@ export default function HomeDesign() {
         </div>
 
         <div class="carousel">
-          <div class="row carousel-image-row">
-            <div class="col-12">
-              <Image className="carousel-image" src={`images/se1.jpg`} />
-            </div>
+          <div class="project">
+            <Image className="carousel-image" src={`images/se1.jpg`} />
           </div>
           <div class="open-app-btn">
             <a href="https://sound-explorer.onrender.com" target="_blank" rel="noopener noreferrer">
@@ -84,12 +82,7 @@ export default function HomeDesign() {
           The app will also try to look for the user in its database (PostgreSQL is used). If found, the user will be stored in the app’s session.
           Otherwise, a new user with the data retrieved from Spotify will be created and committed to the database. </p>
 
-
         </div>
-      </div>
-
-      <div class="footer">
-        <p> {`© All Rights Reserved Dan Murciano 2022`} </p>
       </div>
     </div>
   );

@@ -1,39 +1,12 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
-import { Image, Icon, Button, Menu, Breadcrumb } from 'semantic-ui-react';
+import { Icon, Button, Breadcrumb } from 'semantic-ui-react';
+import ImagesCarousel from "../components/Project/ImagesCarousel";
 
 
 export default function HomeDesign() {
-  const [image, setImage] = React.useState(0);
 
-  function handleSelect(selectedImage) {
-    setImage(selectedImage);
-  }
-
-  function handleArrowLeft(image) {
-    if (image > 0) {
-      setImage(image-1);
-    }
-  }
-
-  function handleArrowRight(image) {
-    if (image < homeDesignImages.length-1) {
-      setImage(image+1);
-    }
-  }
-
-  const homeDesignImages = ["hd1", "hd2", "hd3", "hd4", "hd5", "hd6", "hd7"];
-
-  function populateCarousel(images) {
-    return images.map(i => (
-      <Menu.Item
-        className={images.indexOf(i) === image ? "menu-button-active" : "menu-button"}
-        onClick={() => handleSelect(images.indexOf(i))}>
-        <Icon name='circle' size="small" />
-      </Menu.Item>
-    ));
-  }
-
+  const homeDesignImages = ["hd8", "hd2", "hd3", "hd4", "hd5", "hd6", "hd7"];
 
   const sections = [
     { key: 'Home', content: 'Home', href: "/" },
@@ -49,28 +22,9 @@ export default function HomeDesign() {
           <Breadcrumb className="breadcrumb" size="small" icon='right angle' sections={sections} />
         </div>
 
+
         <div class="carousel">
-          <div class="row carousel-image-row">
-            <div class="col-2 arrow-col">
-              <Button className="arrow-button" basic fluid onClick={() => handleArrowLeft(image)}>
-                <Icon className="carousel-arrow" name="chevron left" size="big" />
-              </Button>
-            </div>
-
-            <div class="col-8">
-              <Image className="carousel-image" src={`images/${homeDesignImages[image]}.jpg`} />
-            </div>
-
-            <div class="col-2 arrow-col">
-              <Button className="arrow-button" basic fluid onClick={() => handleArrowRight(image)}>
-                <Icon className="carousel-arrow" name="chevron right" size="big" />
-              </Button>
-            </div>
-          </div>
-
-          <div class="image-index">
-            <Menu borderless activeIndex={image}> {populateCarousel(homeDesignImages)} </Menu>
-          </div>
+          <ImagesCarousel images={homeDesignImages} />
 
           <div class="open-app-btn">
             <a href="http://home-design.danmurciano.vercel.app" target="_blank" rel="noopener noreferrer">
@@ -83,7 +37,7 @@ export default function HomeDesign() {
 
         <div class="project-page-text">
           <h4> Description </h4>
-          <p> Home Design is a React/ Nextjs based mock web store app. Below is a detailed description of the functionality and underlying logic. </p>
+          <p> Home Design is a React/ Nextjs based mock e-commerce app. Below is a detailed description of the functionality and underlying logic. </p>
 
           <br/>
           <h4> Database </h4>
@@ -145,9 +99,6 @@ export default function HomeDesign() {
         </div>
       </div>
 
-      <div class="footer">
-        <p> {`© All Rights Reserved Dan Murciano 2022`} </p>
-      </div>
     </div>
   );
 }

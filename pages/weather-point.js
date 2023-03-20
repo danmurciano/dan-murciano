@@ -1,38 +1,12 @@
 import React from "react";
 import { Carousel } from 'react-bootstrap';
-import { Image, Icon, Button, Menu, Breadcrumb } from 'semantic-ui-react';
+import { Icon, Button, Breadcrumb } from 'semantic-ui-react';
+import ImagesCarousel from "../components/Project/ImagesCarousel";
+
 
 export default function WeatherPoint() {
-  const [image, setImage] = React.useState(0);
 
-  function handleSelect(selectedImage) {
-    setImage(selectedImage);
-  }
-
-  function handleArrowLeft(image) {
-    if (image > 0) {
-      setImage(image-1);
-    }
-  }
-
-  function handleArrowRight(image) {
-    if (image < weatherPointImages.length-1) {
-      setImage(image+1);
-    }
-  }
-
-  const weatherPointImages = ["wp7", "wp6", "wp5"];
-
-  function populateCarousel(images) {
-    return images.map(i => (
-      <Menu.Item
-        className={images.indexOf(i) === image ? "menu-button-active" : "menu-button"}
-        onClick={() => handleSelect(images.indexOf(i))}>
-        <Icon name='circle' size="small" />
-      </Menu.Item>
-    ));
-  }
-
+  const weatherPointImages = ["wp6", "wp7", "wp5"];
 
   const sections = [
     { key: 'Home', content: 'Home', href: "/" },
@@ -49,27 +23,7 @@ export default function WeatherPoint() {
         </div>
 
         <div class="carousel">
-          <div class="row carousel-image-row">
-            <div class="col-2 arrow-col">
-              <Button className="arrow-button" basic fluid onClick={() => handleArrowLeft(image)}>
-                <Icon className="carousel-arrow" name="chevron left" size="big" />
-              </Button>
-            </div>
-
-            <div class="col-8">
-              <Image className="carousel-image" src={`images/${weatherPointImages[image]}.jpg`} />
-            </div>
-
-            <div class="col-2 arrow-col">
-              <Button className="arrow-button" basic fluid onClick={() => handleArrowRight(image)}>
-                <Icon className="carousel-arrow" name="chevron right" size="big" />
-              </Button>
-            </div>
-          </div>
-
-          <div class="image-index">
-            <Menu borderless activeIndex={image}> {populateCarousel(weatherPointImages)} </Menu>
-          </div>
+          <ImagesCarousel images={weatherPointImages} />
 
           <div class="open-app-btn">
             <a href="https://weather-point.vercel.app" target="_blank" rel="noopener noreferrer">
@@ -113,9 +67,6 @@ export default function WeatherPoint() {
         </div>
       </div>
 
-      <div class="footer">
-        <p> {`© All Rights Reserved Dan Murciano 2022`} </p>
-      </div>
     </div>
   );
 }

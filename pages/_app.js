@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import '../styles/globals.css';
 import '../styles/styles.css';
+import "animate.css/animate.min.css";
 
 
 class MyApp extends App {
