@@ -24,7 +24,6 @@ export default function ImagesCarousel({ images }) {
 
   return (
     <Carousel
-    swipeable={false}
     draggable={false}
     showDots={true}
     responsive={responsive}

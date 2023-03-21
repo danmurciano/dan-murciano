@@ -1,6 +1,12 @@
+import React, { useState } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Image, Icon } from 'semantic-ui-react';
+import Modal from 'react-bootstrap/Modal';
+import HomeDesign from "../Modals/home-design";
+import WeatherPoint from "../Modals/weather-point";
+import SoundExplorer from "../Modals/sound-explorer";
+
 
 export default function ProjectsCarousel() {
   const responsive = {
@@ -22,9 +28,19 @@ export default function ProjectsCarousel() {
   };
 
 
+  const values = [true, 'sm-down', 'md-down', 'lg-down', 'xl-down', 'xxl-down'];
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false);
+
+  function handleShow(project, breakpoint) {
+    setFullscreen(breakpoint);
+    setShow(project);
+  }
+
+
   return (
+    <>
     <Carousel
-    swipeable={false}
     draggable={false}
     showDots={true}
     responsive={responsive}
@@ -38,8 +54,6 @@ export default function ProjectsCarousel() {
     // deviceType={this.props.deviceType}
     dotListClass="custom-dot-list-style"
     itemClass="carousel-item-padding-40-px"
-    // partialVisible={true}
-    // centerMode={true}
   >
 
     <div class="project">
@@ -57,7 +71,7 @@ export default function ProjectsCarousel() {
           <p class="project-text"> A React/ Next.js based mock e-commerce app.
             Includes both full user functionality and admin mode.
           </p>
-          <p>
+          <p class="project-links">
             <a href="http://home-design.danmurciano.vercel.app" target="_blank" rel="noopener noreferrer">
               <Icon name="computer" size="large" link/>
             </a>
@@ -65,10 +79,10 @@ export default function ProjectsCarousel() {
             <a href="https://github.com/danmurciano/home-design" target="_blank" rel="noopener noreferrer">
               <Icon name="github" size="large" link/>
             </a>
-            <a class="read-more" href="/home-design">
+            <button class="read-more" onClick={() => handleShow(HomeDesign)} >
               Read more
               <Icon className="arrow-icon" name="arrow alternate circle right" />
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -98,10 +112,10 @@ export default function ProjectsCarousel() {
             <a href="https://github.com/danmurciano/WeatherPoint" target="_blank" rel="noopener noreferrer">
               <Icon name="github" size="large" link/>
             </a>
-            <a class="read-more" href="/weather-point">
+            <button class="read-more" href="/weather-point" onClick={() => handleShow(WeatherPoint)}>
               Read more
               <Icon className="arrow-icon" name="arrow alternate circle right" />
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -131,10 +145,10 @@ export default function ProjectsCarousel() {
             <a href="https://github.com/danmurciano/sound-explorer" target="_blank" rel="noopener noreferrer">
               <Icon name="github" size="large" link/>
             </a>
-            <a class="read-more" href="/sound-explorer">
+            <button class="read-more" href="/sound-explorer" onClick={() => handleShow(SoundExplorer)}>
               Read more
               <Icon className="arrow-icon" name="arrow alternate circle right" />
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -213,6 +227,11 @@ export default function ProjectsCarousel() {
     </div>
 
   </Carousel>
+
+  <Modal size='xl' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+    {show}
+  </Modal>
+  </>
   )
 
 }

@@ -61,6 +61,7 @@
   background-image: url("/images/banner_back.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  border-bottom: 3px solid black;
 }
 
 .home-image-front {
@@ -82,6 +83,7 @@
 
 h1 {
   font-size: 80px;
+  font-size: calc(3.9w);
   opacity: 0.03;
   transform: rotate(-90deg);
   position: relative;
@@ -91,7 +93,7 @@ h1 {
 
 h2 {
   font-size: 72px;
-  font-size: calc(55.6px + 0.8vw);
+  font-size: calc(47.4px + 1.2vw);
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   margin: 0 auto 30px !important;
@@ -136,6 +138,7 @@ h2 {
   margin: 80px auto;
   margin: calc(50px + 1.5vw) auto;
   height: 180px;
+  height: calc(160px + 1vw);
 }
 
 .icon-row {
@@ -178,7 +181,7 @@ h2 {
 
 .project h3 {
   font-size: 36px;
-  font-size: calc(27.8px + 0.4vw);
+  font-size: calc(23.7px + 0.6vw);
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
   margin-bottom: 6px;
@@ -189,7 +192,7 @@ h2 {
   overflow: hidden;
   box-shadow: 0 0 20px #b0b0b0;
   border-radius: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .project-image {
@@ -217,22 +220,19 @@ h2 {
   opacity: 0.8;
 }
 
-.col-icon-left {
-  -webkit-flex: 0 0 24%;
-  flex: 0 0 24%;
-  max-width: 120px;
-}
 
-.col-icon {
-  -webkit-flex: 0 0 12%;
-  flex: 0 0 12%;
-  max-width: 60px;
-  padding: 0 !important;
-  margin: auto !important;
-}
 
 .icon {
   margin: auto 6px !important;
+  position: relative;
+}
+
+.computer {
+  bottom: 1px;
+}
+
+.github {
+  bottom: 2px;
 }
 
 .read-more {
@@ -240,18 +240,22 @@ h2 {
   font-size: 16px;
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  margin-left: 8px;
+  margin-left: 6px;
+  background: none;
+  border: none;
+  opacity: 0.8;
 }
 
 .arrow-icon {
   margin-left: 2px !important;
+  top: 1px !important;
 }
 
-.projects a {
+.projects a, button {
   color: white !important;
 }
 
-.projects a:hover {
+.projects a, button:hover {
   opacity: 1;
 }
 
@@ -264,7 +268,7 @@ h2 {
 }
 
 .react-multi-carousel-dot--active button {
-  background: #05858e !important;
+  background: #05858ec5 !important;
 }
 
 
@@ -319,41 +323,39 @@ h2 {
 
 /* Project Page */
 
-.home-design {
-  max-width: 1140px;
-  margin: 40px auto;
-  padding: 0 15px 80px;
-  background-color: white;
-  box-shadow: 0 0 20px #b0b0b0;
+.modal-xl {
+  max-width: 1080px;
 }
 
-.breadcrumb-div {
-  padding: 6px 0;
-  max-width: 1200px;
-  margin: auto;
+.modal-backdrop.show {
+  opacity: 0.7;
 }
 
-.breadcrumb {
-  background-color: white !important;
+.project-modal {
+  animation: page-fadeIn 1.4s;
 }
 
-.ui.breadcrumb a {
-  color: #05858e;
+.project-modal h5 {
+  text-align: center;
+  font-size: 34px;
+  font-size: calc(21.7px + 0.6vw);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  margin-top: 4%;
+  color: #323232c5;
 }
 
 
 .carousel {
   max-width: 100%;
   margin: 0 auto;
-  padding: 40px 6px;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 40px;
 }
 
 
 .carousel-image {
   height: 400px;
-  max-height: calc(40vw - 20px);
+  max-height: calc(54vw - 20px);
   width: auto;
   margin: 0 auto !important;
   box-shadow: 0 0 20px #b0b0b0;
@@ -373,9 +375,9 @@ h2 {
 }
 
 .project-page-text {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 12px;
+  max-width: 880px;
+  margin: 5% auto;
+  padding: 0 5%;
   color: black;
   font-size: 17px;
   font-size: calc(15px + 0.1vw);

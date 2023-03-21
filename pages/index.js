@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Image, Icon } from 'semantic-ui-react';
+
 import About from "../components/_App/About";
 import Projects from "../components/_App/Projects";
 import Header from "../components/_App/Header";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 
 export default function Home() {
