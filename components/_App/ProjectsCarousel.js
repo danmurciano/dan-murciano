@@ -183,6 +183,28 @@ export default function ProjectsCarousel() {
       <div class="row">
         <div class="col-lg-8 col-md-12">
           <div class="project-image-div">
+            <a href="https://travel-bug-danmurciano.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <Image className="project-image" src="images/tb.jpg"/>
+            </a>
+          </div>   
+        </div>
+
+        <div class="col-lg-4 col-md-12 project-body">
+          <h3> Travel Bug </h3>
+          <p class="project-text"> An online magazine with travel related articles and tips. </p>
+          <p>
+            <a href="https://travel-bug-danmurciano.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <Icon name="computer" size="large" link/>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="row">
+        <div class="col-lg-8 col-md-12">
+          <div class="project-image-div">
             <a href="https://www.wtto-music.com/" target="_blank" rel="noopener noreferrer">
               <Image className="project-image" src="images/wtto.jpg"/>
             </a>
