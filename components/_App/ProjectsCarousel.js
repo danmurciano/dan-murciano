@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Image, Icon } from 'semantic-ui-react';
 import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 import HomeDesign from "../Modals/home-design";
 import WeatherPoint from "../Modals/weather-point";
 import SoundExplorer from "../Modals/sound-explorer";
@@ -251,6 +252,8 @@ export default function ProjectsCarousel() {
   </Carousel>
 
   <Modal size='xl' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+    <Modal.Header closeButton>
+    </Modal.Header>
     {show}
   </Modal>
   </>

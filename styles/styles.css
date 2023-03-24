@@ -252,7 +252,7 @@ h2 {
 }
 
 .projects a, button {
-  color: white !important;
+  color: white;
 }
 
 .projects a, button:hover {
@@ -341,8 +341,17 @@ h2 {
   font-size: calc(21.7px + 0.6vw);
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
-  margin-top: 4%;
+  margin-top: 1.25%;
   color: #323232c5;
+}
+
+.modal-header {
+  border: none !important;
+  margin-right: 12px;
+}
+
+.close {
+  font-size: 1.75rem;
 }
 
 
